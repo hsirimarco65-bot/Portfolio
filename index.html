@@ -1,0 +1,999 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Portfolio personal de Humberto Sirimarco - Desarrollador y estudiante de ingeniería informática.">
+    <title>Humberto Sirimarco | Portfolio</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css?v=10">
+</head>
+
+<body>
+    <canvas id="lienzo-particulas" class="lienzo-particulas"></canvas>
+
+    <header class="cabecera-navegacion" id="cabecera">
+        <nav class="barra-navegacion" aria-label="Navegación principal">
+            <ul class="lista-enlaces">
+                <li><a href="#bienvenida" class="enlace-nav" id="enlace-inicio">Inicio</a></li>
+                <li><a href="#acerca-de" class="enlace-nav enlace-activo" id="enlace-acerca-de">Acerca de</a></li>
+                <li><a href="#proyectos" class="enlace-nav" id="enlace-proyectos">Proyectos</a></li>
+                <li><a href="#contacto" class="enlace-nav" id="enlace-contacto">Contacto</a></li>
+                <li>
+                    <a href="https://github.com/hsirimarco65-bot" target="_blank" rel="noopener noreferrer"
+                        class="enlace-nav enlace-nav-github" id="enlace-github" title="Ver perfil en GitHub">
+                        <svg class="icono-nav-github" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/>
+                        </svg>
+                        <span>GitHub</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="contenedor-principal">
+
+        <section id="bienvenida" class="seccion-bienvenida" aria-label="Presentación principal">
+            <div class="tarjeta-presentacion">
+                <h1 class="texto-presentacion">
+                    Hola, soy <span class="nombre-destacado">Humberto Sirimarco</span>. Desarrollador y estudiante en
+                    ingeniería informática.
+                </h1>
+
+                <div class="contenedor-accion">
+                    <a href="#acerca-de" id="boton-ver-trabajo" class="boton-accion">
+                        <span class="texto-boton">Ver mi trabajo</span>
+                        <svg class="icono-flecha" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="12" y1="5" x2="12" y2="19"></line>
+                            <polyline points="19 12 12 19 5 12"></polyline>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="acerca-de" class="seccion-acerca-de" aria-label="Acerca de Humberto Sirimarco">
+            <div class="contenedor-acerca-de">
+                <header class="encabezado-seccion">
+                    <h2 class="titulo-seccion">Acerca de mí</h2>
+                    <div class="divisor-seccion"></div>
+                </header>
+
+                <div class="cuadricula-acerca-de">
+                    <article class="columna-perfil">
+                        <div class="tarjeta-bio">
+                            <p class="texto-bio">
+                                Soy estudiante de 3.er año de Ingeniería en Informática y desarrollador backend, enfocado principalmente en Java y con conocimientos en Python. Me apasiona el desarrollo de sistemas informáticos y estoy constantemente fortaleciendo mis conocimientos en programación, patrones de diseño y arquitectura de software.
+                            </p>
+                            <p class="texto-bio">
+                                Me caracterizo por la perseverancia y el compromiso con el aprendizaje continuo. Cuento con un nivel B1 de inglés y continuo mi formacion en el idioma en Bonfire Academy
+                            </p>
+                            <p class="texto-bio">
+                                Fuera de la programación, disfruto del gimnasio y de compartir tiempo con amigos y familia.
+                            </p>
+
+                            <div class="divisor-tarjeta"></div>
+
+                            <div class="bloque-fundamentos">
+                                <h3 class="titulo-fundamentos">Fundamentos</h3>
+                                <ul class="lista-fundamentos">
+                                    <li class="item-fundamento">Estructuras de datos y algoritmos</li>
+                                    <li class="item-fundamento">Programación orientada a objetos</li>
+                                    <li class="item-fundamento">Patrones de diseño</li>
+                                    <li class="item-fundamento">Arquitectura de software</li>
+                                    <li class="item-fundamento">Bases de datos</li>
+                                    <li class="item-fundamento">Modelado de sistemas</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </article>
+
+                    <aside class="columna-tecnologias">
+                        <div class="tarjeta-categoria">
+                            <h3 class="titulo-categoria">Backend</h3>
+                            <div class="grupo-chips">
+                                <span class="chip-tecnologia">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg" alt="Java" class="icono-tech-chip">
+                                    <span>Java</span>
+                                </span>
+                                <span class="chip-tecnologia">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/spring/spring-original.svg" alt="Spring Boot" class="icono-tech-chip">
+                                    <span>Spring Boot</span>
+                                </span>
+                                <span class="chip-tecnologia">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg" alt="Node.js" class="icono-tech-chip">
+                                    <span>Node.js</span>
+                                </span>
+                                <span class="chip-tecnologia">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" alt="Python" class="icono-tech-chip">
+                                    <span>Python</span>
+                                </span>
+                                <span class="chip-tecnologia">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/c/c-original.svg" alt="C" class="icono-tech-chip">
+                                    <span>C</span>
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="tarjeta-categoria">
+                            <h3 class="titulo-categoria">Frontend</h3>
+                            <div class="grupo-chips">
+                                <span class="chip-tecnologia">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" alt="HTML" class="icono-tech-chip">
+                                    <span>HTML</span>
+                                </span>
+                                <span class="chip-tecnologia">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" alt="CSS" class="icono-tech-chip">
+                                    <span>CSS</span>
+                                </span>
+                                <span class="chip-tecnologia">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" alt="JavaScript" class="icono-tech-chip">
+                                    <span>JavaScript</span>
+                                </span>
+                                <span class="chip-tecnologia">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" alt="React" class="icono-tech-chip">
+                                    <span>React</span>
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="tarjeta-categoria">
+                            <h3 class="titulo-categoria">Bases de datos</h3>
+                            <div class="grupo-chips">
+                                <span class="chip-tecnologia">
+                                    <svg class="icono-tech-chip" viewBox="0 0 24 24" fill="none" stroke="#38bdf8" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                        <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                                        <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
+                                        <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
+                                    </svg>
+                                    <span>SQL</span>
+                                </span>
+                                <span class="chip-tecnologia">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg" alt="MongoDB" class="icono-tech-chip">
+                                    <span>MongoDB</span>
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="tarjeta-categoria">
+                            <h3 class="titulo-categoria">Herramientas</h3>
+                            <div class="grupo-chips">
+                                <span class="chip-tecnologia">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" alt="Git" class="icono-tech-chip">
+                                    <span>Git</span>
+                                </span>
+                                <span class="chip-tecnologia">
+                                    <svg class="icono-tech-chip icono-github-blanco" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/>
+                                    </svg>
+                                    <span>GitHub</span>
+                                </span>
+                                <span class="chip-tecnologia">
+                                    <svg class="icono-tech-chip" viewBox="0 0 24 24" fill="none" stroke="#4ade80" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                        <polyline points="4 17 10 11 4 5"></polyline>
+                                        <line x1="12" y1="19" x2="20" y2="19"></line>
+                                    </svg>
+                                    <span>Terminal</span>
+                                </span>
+                                <span class="chip-tecnologia">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg" alt="VS Code" class="icono-tech-chip">
+                                    <span>VS Code</span>
+                                </span>
+                                <span class="chip-tecnologia">
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/wordpress/wordpress-plain.svg" alt="WordPress" class="icono-tech-chip">
+                                    <span>WordPress</span>
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="tarjeta-categoria">
+                            <h3 class="titulo-categoria">IA</h3>
+                            <div class="grupo-chips">
+                                <span class="chip-tecnologia">
+                                    <svg class="icono-tech-chip" viewBox="0 0 24 24" fill="#D97757" aria-hidden="true">
+                                        <path d="m4.714 15.956 4.718-2.648.079-.23-.079-.128h-.23l-.79-.049-2.696-.073-2.337-.097-2.265-.121-.57-.122-.535-.704.055-.352.48-.322.686.06 1.518.104 2.277.158 1.651.097 2.447.255h.389l.054-.158-.133-.097-.104-.097-1.802-1.282-2.55-1.688-1.335-.972-.723-.491-.364-.462-.158-1.008.656-.722.88.06.225.061.892.686 1.907 1.476 2.49 1.833.363.304.146-.103.018-.073-.164-.273-1.354-2.447-1.445-2.49-.643-1.031-.17-.62c-.061-.255-.104-.467-.104-.728L6.287.134 6.7 0l.996.134.418.364.62 1.415 1.001 2.228 1.555 3.03.455.898.243.832.091.255h.158v-.146l.128-1.706.236-2.095.231-2.695.079-.76.376-.91.747-.492.583.28.48.685-.067.444-.286 1.852-.558 2.902-.365 1.943h.213l.243-.243.983-1.305 1.652-2.065.728-.82.85-.904.547-.431h1.032l.759 1.13-.34 1.165-1.063 1.476-1.579 2.185-1.323 1.87-.243.51.073.11.23.012 2.308-.437 2.052-.389 2.083-.34 1.25-.17.784.34.425.68-.23.947-.948.51-1.688.376-2.185.426-3.024.583h-.182l.06.145.857.73 2.124 1.772 2.768 2.308.68.51.352.546-.06.753-.668.607-.869-.036-.886-.486-2.125-1.64-2.367-1.857-.365-.183-.127.061.024.146.546 1.25 1.457 3.328.183.498.157.947-.285.668-.692.389-.85-.146-.668-.85-1.002-2.368-1.366-3.097-.376-.856-.122-.122-.097.06-.316 3.632-.303 1.967-.183.74-.534.547-.85-.085-.547-.631.122-.729.352-1.991.437-3.097.073-.789-.097-.182-.122.036-.971 1.245-1.761 2.21-2.064 2.586-.546.607-.632.425-.79-.121-.497-.73.121-.85 1.093-1.42 1.943-2.478 1.057-1.365Z"/>
+                                    </svg>
+                                    <span>Claude</span>
+                                </span>
+                                <span class="chip-tecnologia">
+                                    <svg class="icono-tech-chip" viewBox="0 0 24 24" fill="none" stroke="#a78bfa" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                        <path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z"></path>
+                                        <path d="M5 3v4"></path>
+                                        <path d="M19 17v4"></path>
+                                        <path d="M3 5h4"></path>
+                                        <path d="M17 19h4"></path>
+                                    </svg>
+                                    <span>Herramientas de IA</span>
+                                </span>
+                            </div>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </section>
+
+        <section id="proyectos" class="seccion-proyectos" aria-label="Proyectos desarrollados por Humberto Sirimarco">
+            <div class="contenedor-proyectos">
+                <header class="encabezado-seccion">
+                    <h2 class="titulo-seccion">Proyectos</h2>
+                    <div class="divisor-seccion"></div>
+                </header>
+
+                <div class="lista-proyectos">
+
+                    <article class="tarjeta-proyecto">
+                        <div class="cuadricula-proyecto">
+                            <div class="columna-media-proyecto">
+                                <div class="contenedor-captura-individual">
+                                    <div class="marco-captura marco-captura-interactivo marco-captura-completo" role="button"
+                                        tabindex="0" data-visor-indice="0"
+                                        data-ampliar-origen="imagenes/Peluqueria.png"
+                                        data-ampliar-tipo="Landing Page Web"
+                                        data-ampliar-titulo="Fashion Style Ruiz | Landing Page Comercial"
+                                        data-ampliar-subtitulo="Diseño responsivo, catálogo de servicios capilares, galería y conversión directa vía WhatsApp e Instagram"
+                                        aria-label="Ampliar captura de la landing page de Fashion Style Ruiz">
+                                        <img src="imagenes/Peluqueria.png"
+                                            alt="Landing page de la peluquería Fashion Style Ruiz"
+                                            class="imagen-proyecto" loading="lazy">
+                                        <div class="badge-captura-fijo">Landing Page</div>
+                                        <div class="superposicion-captura">
+                                            <span class="etiqueta-ampliar-captura">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                    viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                    stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                                                    <circle cx="11" cy="11" r="8"></circle>
+                                                    <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                                                    <line x1="11" y1="8" x2="11" y2="14"></line>
+                                                    <line x1="8" y1="11" x2="14" y2="11"></line>
+                                                </svg>
+                                                <span>Clic para expandir</span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="columna-info-proyecto">
+                                <div class="meta-cabecera-proyecto">
+                                    <span class="badge-anio-proyecto" aria-label="Año de creación: 2025">2025</span>
+                                </div>
+                                <h3 class="titulo-proyecto">Fashion Style Ruiz – Landing Page Comercial</h3>
+
+                                <p class="descripcion-proyecto">
+                                    Landing page moderna y totalmente responsiva diseñada para el salón de peluquería y
+                                    estética Fashion Style Ruiz. Desarrollada para potenciar la presencia digital de la
+                                    marca, exhibir el catálogo de servicios (colorimetría, balayage, tratamientos) y
+                                    facilitar la captación y reserva de turnos mediante integración directa con WhatsApp
+                                    e Instagram.
+                                </p>
+
+                                <div class="bloque-tech-stack">
+                                    <h4 class="subtitulo-tech-stack">Stack Técnico</h4>
+                                    <div class="grupo-chips-proyecto">
+                                        <span class="chip-tech-proyecto">HTML5</span>
+                                        <span class="chip-tech-proyecto">CSS3</span>
+                                        <span class="chip-tech-proyecto">JavaScript</span>
+                                        <span class="chip-tech-proyecto">Responsive Design</span>
+                                        <span class="chip-tech-proyecto">Mobile First</span>
+                                        <span class="chip-tech-proyecto">UI / UX</span>
+                                    </div>
+                                </div>
+
+                                <div class="contenedor-acciones-proyecto">
+                                    <a href="https://peluqueriastyleruiz.sirionstudio.com" target="_blank"
+                                        rel="noopener noreferrer" class="boton-visitar-proyecto"
+                                        title="Visitar el sitio web oficial en vivo">
+                                        <span>Visitar sitio web</span>
+                                        <svg class="icono-enlace-externo" xmlns="http://www.w3.org/2000/svg" width="17"
+                                            height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                            stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                                            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                            <polyline points="15 3 21 3 21 9"></polyline>
+                                            <line x1="10" y1="14" x2="21" y2="3"></line>
+                                        </svg>
+                                    </a>
+                                    <button type="button" class="boton-detalles-proyecto"
+                                        id="boton-detalles-fashionstyle" aria-haspopup="dialog">
+                                        <span>Ver más detalles</span>
+                                        <svg class="icono-flecha-detalles" xmlns="http://www.w3.org/2000/svg" width="18"
+                                            height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                            stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                                            <polyline points="12 5 19 12 12 19"></polyline>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="tarjeta-proyecto">
+                        <div class="cuadricula-proyecto">
+                            <div class="columna-media-proyecto">
+                                <div class="contenedor-imagenes-proyecto contenedor-imagenes-apiladas"
+                                    style="display: flex; flex-direction: column; gap: 1.15rem; width: 100%; aspect-ratio: auto;">
+                                    <div class="marco-captura marco-captura-interactivo" role="button" tabindex="0"
+                                        data-visor-indice="1" data-ampliar-origen="imagenes/MercadoAbasto.png"
+                                        data-ampliar-titulo="Mercado de Abasto | Entorno de Desarrollo y Tests Unitarios"
+                                        data-ampliar-subtitulo="Java 21, arquitectura limpia, cobertura de tests JaCoCo y estructura de paquetes de dominio"
+                                        aria-label="Ampliar captura del entorno de desarrollo de Mercado de Abasto">
+                                        <img src="imagenes/MercadoAbasto.png"
+                                            alt="Mercado de Abasto - Entorno de Desarrollo y Tests"
+                                            class="imagen-proyecto" loading="lazy">
+                                        <div class="badge-captura-fijo">IDE & Tests</div>
+                                        <div class="superposicion-captura">
+                                            <span class="etiqueta-ampliar-captura">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                    viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                    stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                                                    <circle cx="11" cy="11" r="8"></circle>
+                                                    <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                                                    <line x1="11" y1="8" x2="11" y2="14"></line>
+                                                    <line x1="8" y1="11" x2="14" y2="11"></line>
+                                                </svg>
+                                                <span>Clic para expandir</span>
+                                            </span>
+                                        </div>
+                                    </div>
+
+                                    <div class="marco-captura marco-captura-interactivo marco-captura-uml" role="button"
+                                        tabindex="0" data-visor-indice="2"
+                                        data-ampliar-origen="imagenes/diagrama_uml.svg"
+                                        data-ampliar-titulo="Mercado de Abasto | Diagrama de Clases UML"
+                                        data-ampliar-subtitulo="Modelo de dominio, herencia de puestos, relaciones y patrón DAO (+70 clases) en SVG vectorial"
+                                        data-es-svg="true"
+                                        aria-label="Ampliar diagrama UML en formato SVG de Mercado de Abasto">
+                                        <img src="imagenes/diagrama_uml.svg"
+                                            alt="Diagrama de Clases UML - Mercado de Abasto"
+                                            class="imagen-proyecto imagen-uml-svg" loading="lazy">
+                                        <div class="badge-captura-fijo badge-svg">Diagrama UML (SVG)</div>
+                                        <div class="superposicion-captura">
+                                            <span class="etiqueta-ampliar-captura">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                    viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                    stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                                                    <circle cx="11" cy="11" r="8"></circle>
+                                                    <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                                                    <line x1="11" y1="8" x2="11" y2="14"></line>
+                                                    <line x1="8" y1="11" x2="14" y2="11"></line>
+                                                </svg>
+                                                <span>Clic para expandir</span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="columna-info-proyecto">
+                                <div class="meta-cabecera-proyecto">
+                                    <span class="badge-anio-proyecto" aria-label="Año de creación: 2025">2025</span>
+                                </div>
+                                <h3 class="titulo-proyecto">Sistema de Gestión de Mercado de Abasto | Java Core &
+                                    Testing</h3>
+
+                                <p class="descripcion-proyecto">
+                                    Desarrollo backend en Java 21 para la administración de un mercado comercial.
+                                    Proyecto centrado 100% en lógica de negocio, arquitectura limpia y pruebas unitarias
+                                    (JUnit + JaCoCo), sin interfaz gráfica, simulando el núcleo de un servicio
+                                    corporativo.
+                                </p>
+
+                                <div class="bloque-tech-stack">
+                                    <h4 class="subtitulo-tech-stack">Stack Técnico</h4>
+                                    <div class="grupo-chips-proyecto">
+                                        <span class="chip-tech-proyecto">Java 21</span>
+                                        <span class="chip-tech-proyecto">Gradle</span>
+                                        <span class="chip-tech-proyecto">JUnit</span>
+                                        <span class="chip-tech-proyecto">JaCoCo</span>
+                                        <span class="chip-tech-proyecto">Git</span>
+                                    </div>
+                                </div>
+
+                                <div class="contenedor-acciones-proyecto">
+                                    <a href="https://github.com/hsirimarco65-bot/mercado-abasto" target="_blank"
+                                        rel="noopener noreferrer" class="boton-visitar-proyecto boton-github-proyecto"
+                                        title="Ver repositorio en GitHub">
+                                        <svg class="icono-github-proyecto" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/>
+                                        </svg>
+                                        <span>Ver en GitHub</span>
+                                    </a>
+                                    <button type="button" class="boton-detalles-proyecto"
+                                        id="boton-detalles-mercadoabasto" aria-haspopup="dialog">
+                                        <span>Ver más detalles</span>
+                                        <svg class="icono-flecha-detalles" xmlns="http://www.w3.org/2000/svg" width="18"
+                                            height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                            stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                                            <polyline points="12 5 19 12 12 19"></polyline>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="tarjeta-proyecto">
+                        <div class="cuadricula-proyecto">
+                            <div class="columna-media-proyecto">
+                                <div class="contenedor-video">
+                                    <video id="video-siricell" class="reproductor-video" controls playsinline
+                                        preload="metadata">
+                                        <source src="videos/siricell.mp4" type="video/mp4">
+                                        Tu navegador no soporta la reproducción de video.
+                                    </video>
+                                </div>
+                            </div>
+
+                            <div class="columna-info-proyecto">
+                                <div class="meta-cabecera-proyecto">
+                                    <span class="badge-anio-proyecto" aria-label="Año de creación: 2026">2026</span>
+                                </div>
+                                <h3 class="titulo-proyecto">SiriCell – Plataforma E-commerce</h3>
+
+                                <p class="descripcion-proyecto">
+                                    Aplicación web integral de comercio electrónico para venta de productos tecnológicos
+                                    y celulares. Incluye catálogo interactivo, flujo completo de checkout con cálculo de
+                                    envíos, autenticación segura de usuarios y un panel administrativo para gestión de
+                                    inventario y pedidos en tiempo real.
+                                </p>
+
+                                <div class="aviso-privacidad-proyecto">
+                                    <svg class="icono-aviso-privacidad" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <rect width="18" height="11" x="3" y="11" rx="2" ry="2"></rect>
+                                        <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                                    </svg>
+                                    <span>Código privado: no subido a GitHub por tratarse del desarrollo de un proyecto de negocio propio.</span>
+                                </div>
+
+                                <div class="bloque-tech-stack">
+                                    <h4 class="subtitulo-tech-stack">Stack Técnico</h4>
+                                    <div class="grupo-chips-proyecto">
+                                        <span class="chip-tech-proyecto">Node.js</span>
+                                        <span class="chip-tech-proyecto">Express</span>
+                                        <span class="chip-tech-proyecto">MongoDB (Atlas)</span>
+                                        <span class="chip-tech-proyecto">Mongoose</span>
+                                        <span class="chip-tech-proyecto">JavaScript (ES6+)</span>
+                                        <span class="chip-tech-proyecto">HTML5</span>
+                                        <span class="chip-tech-proyecto">CSS3</span>
+                                        <span class="chip-tech-proyecto">REST API</span>
+                                    </div>
+                                </div>
+
+                                <div class="contenedor-acciones-proyecto">
+                                    <button type="button" class="boton-detalles-proyecto" id="boton-detalles-siricell"
+                                        aria-haspopup="dialog">
+                                        <span>Ver más detalles</span>
+                                        <svg class="icono-flecha-detalles" xmlns="http://www.w3.org/2000/svg" width="18"
+                                            height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                            stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                                            <polyline points="12 5 19 12 12 19"></polyline>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="tarjeta-proyecto">
+                        <div class="cuadricula-proyecto">
+                            <div class="columna-media-proyecto">
+                                <div class="contenedor-video">
+                                    <video id="video-siricellsistema" class="reproductor-video" controls playsinline
+                                        preload="metadata">
+                                        <source src="videos/siricellsistema1.mp4" type="video/mp4">
+                                        Tu navegador no soporta la reproducción de video.
+                                    </video>
+                                </div>
+                            </div>
+
+                            <div class="columna-info-proyecto">
+                                <div class="meta-cabecera-proyecto">
+                                    <span class="badge-anio-proyecto" aria-label="Año de creación: 2026">2026</span>
+                                </div>
+                                <h3 class="titulo-proyecto">Módulo de Gestión de Stock, Ventas y Pasarela de Pagos en
+                                    Tiempo Real</h3>
+
+                                <p class="descripcion-proyecto">
+                                    Solución integral de backoffice y checkout automatizado. Conecta directamente la
+                                    tienda con la base de datos centralizada en MongoDB Atlas para sincronizar
+                                    inventario al instante tras cada transacción (vía Webhooks de pago y
+                                    transferencias), brindando a los administradores control total sobre catálogo,
+                                    métricas de ingresos y estados de envío.
+                                </p>
+
+                                <div class="aviso-privacidad-proyecto">
+                                    <svg class="icono-aviso-privacidad" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <rect width="18" height="11" x="3" y="11" rx="2" ry="2"></rect>
+                                        <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                                    </svg>
+                                    <span>Código privado: no subido a GitHub por tratarse del desarrollo de un proyecto de negocio propio.</span>
+                                </div>
+
+                                <div class="bloque-tech-stack">
+                                    <h4 class="subtitulo-tech-stack">Stack Técnico</h4>
+                                    <div class="grupo-chips-proyecto">
+                                        <span class="chip-tech-proyecto">Node.js</span>
+                                        <span class="chip-tech-proyecto">Express</span>
+                                        <span class="chip-tech-proyecto">MongoDB Atlas</span>
+                                        <span class="chip-tech-proyecto">Mongoose</span>
+                                        <span class="chip-tech-proyecto">Webhooks / REST API</span>
+                                        <span class="chip-tech-proyecto">Mercado Pago SDK</span>
+                                    </div>
+                                </div>
+
+                                <div class="contenedor-acciones-proyecto">
+                                    <button type="button" class="boton-detalles-proyecto"
+                                        id="boton-detalles-siricellsistema" aria-haspopup="dialog">
+                                        <span>Ver más detalles</span>
+                                        <svg class="icono-flecha-detalles" xmlns="http://www.w3.org/2000/svg" width="18"
+                                            height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                            stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                                            <polyline points="12 5 19 12 12 19"></polyline>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <section id="contacto" class="seccion-contacto" aria-label="Sección de contacto con Humberto Sirimarco">
+            <div class="contenedor-contacto">
+                <header class="encabezado-seccion">
+                    <h2 class="titulo-seccion">Contacto</h2>
+                    <div class="divisor-seccion"></div>
+                </header>
+
+                <div class="cuadricula-contacto">
+                    <div class="columna-info-contacto">
+                        <div class="tarjeta-info-contacto">
+                            <h3 class="subtitulo-info-contacto">¿Tenés una propuesta o proyecto en mente?</h3>
+                            <p class="texto-info-contacto">
+                                Estoy disponible para nuevas oportunidades, desarrollo backend o frontend. Dejame tu mensaje y me pondré en contacto a la brevedad.
+                            </p>
+
+                            <div class="lista-detalles-contacto">
+                                <div class="item-detalle-contacto">
+                                    <div class="icono-contacto-envoltorio">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                            <rect width="20" height="16" x="2" y="4" rx="2"></rect>
+                                            <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+                                        </svg>
+                                    </div>
+                                    <div class="textos-detalle-contacto">
+                                        <span class="etiqueta-item-contacto">Correo directo</span>
+                                        <a href="mailto:hsirimarco65@gmail.com" class="enlace-detalle-contacto">hsirimarco65@gmail.com</a>
+                                    </div>
+                                </div>
+
+                                <div class="item-detalle-contacto">
+                                    <div class="icono-contacto-envoltorio">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                            <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path>
+                                            <circle cx="12" cy="10" r="3"></circle>
+                                        </svg>
+                                    </div>
+                                    <div class="textos-detalle-contacto">
+                                        <span class="etiqueta-item-contacto">Ubicación</span>
+                                        <span class="valor-item-contacto">Argentina</span>
+                                    </div>
+                                </div>
+
+                                <div class="item-detalle-contacto">
+                                    <div class="icono-contacto-envoltorio">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/>
+                                        </svg>
+                                    </div>
+                                    <div class="textos-detalle-contacto">
+                                        <span class="etiqueta-item-contacto">GitHub</span>
+                                        <a href="https://github.com/hsirimarco65-bot" target="_blank" rel="noopener noreferrer" class="enlace-detalle-contacto">github.com/hsirimarco65-bot</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="columna-formulario-contacto">
+                        <div class="tarjeta-formulario-contacto">
+                            <h3 class="titulo-formulario">Contacta conmigo</h3>
+                            <form id="formulario-contacto" class="formulario-contacto" action="https://formsubmit.co/hsirimarco65@gmail.com" method="POST">
+                                <input type="hidden" name="_subject" value="Nuevo mensaje desde tu Portfolio Web">
+                                <input type="hidden" name="_template" value="table">
+                                <input type="hidden" name="_captcha" value="false">
+
+                                <div class="campo-formulario">
+                                    <label for="nombre-contacto" class="etiqueta-campo">Nombre</label>
+                                    <input type="text" id="nombre-contacto" name="nombre" class="entrada-formulario"
+                                        placeholder="Ingresa tu nombre" required autocomplete="name">
+                                </div>
+
+                                <div class="campo-formulario">
+                                    <label for="email-contacto" class="etiqueta-campo">Correo electrónico</label>
+                                    <input type="email" id="email-contacto" name="email" class="entrada-formulario"
+                                        placeholder="ingresa tu correo electronico." required autocomplete="email">
+                                </div>
+
+                                <div class="campo-formulario">
+                                    <label for="mensaje-contacto" class="etiqueta-campo">Mensaje</label>
+                                    <textarea id="mensaje-contacto" name="mensaje" class="textarea-formulario" rows="5"
+                                        placeholder="escribe tu mensaje." required></textarea>
+                                </div>
+
+                                <button type="submit" id="boton-enviar-contacto" class="boton-enviar-contacto">
+                                    <span class="texto-boton-enviar">Enviar</span>
+                                </button>
+
+                                <div id="estado-envio-contacto" class="estado-envio-contacto" aria-live="polite"></div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div id="modal-siricell" class="modal-proyecto" role="dialog" aria-modal="true"
+            aria-labelledby="modal-titulo-siricell" aria-hidden="true">
+            <div class="modal-telon" id="telon-modal-siricell"></div>
+            <div class="modal-tarjeta">
+                <button type="button" class="modal-boton-cerrar" id="cerrar-modal-siricell" aria-label="Cerrar modal">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="18" y1="6" x2="6" y2="18"></line>
+                        <line x1="6" y1="6" x2="18" y2="18"></line>
+                    </svg>
+                </button>
+
+                <header class="modal-encabezado">
+                    <span class="modal-etiqueta">E-Commerce • 2026</span>
+                    <h3 id="modal-titulo-siricell" class="modal-titulo">SiriCell – E-Commerce Platform & Management
+                        System</h3>
+                </header>
+
+                <div class="modal-cuerpo">
+                    <div class="modal-seccion">
+                        <h4 class="modal-subtitulo">Descripción</h4>
+                        <p class="modal-texto">
+                            Plataforma web de comercio electrónico moderna y responsiva desarrollada de extremo a
+                            extremo (Full Stack). El sistema resuelve la necesidad de comercialización online mediante
+                            una arquitectura desacoplada basada en una API REST y una base de datos NoSQL en la nube.
+                        </p>
+                        <div class="aviso-privacidad-proyecto">
+                            <svg class="icono-aviso-privacidad" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <rect width="18" height="11" x="3" y="11" rx="2" ry="2"></rect>
+                                <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                            </svg>
+                            <span>Código privado: no subido a GitHub por tratarse del desarrollo de un proyecto de negocio propio.</span>
+                        </div>
+                    </div>
+
+                    <div class="modal-seccion">
+                        <h4 class="modal-subtitulo">Características Principales</h4>
+                        <ul class="modal-lista">
+                            <li><strong>Experiencia de Usuario & Catálogo:</strong> Navegación fluida de productos con
+                                vista detallada, filtrado dinámico y carrito de compras persistente.</li>
+                            <li><strong>Proceso de Checkout & Envíos:</strong> Módulo de finalización de compra con
+                                validación de datos de facturación y cálculo de métodos de entrega.</li>
+                            <li><strong>Autenticación y Perfil:</strong> Registro e inicio de sesión seguro para
+                                clientes, con gestión de perfiles e historial de compras.</li>
+                            <li><strong>Panel de Administración (Backoffice):</strong> Panel de control protegido para
+                                la administración del catálogo de productos, control de stock y seguimiento de órdenes.
+                            </li>
+                            <li><strong>Arquitectura Backend:</strong> API REST modularizada con Express y persistencia
+                                escalable en la nube con MongoDB Atlas y Mongoose.</li>
+                        </ul>
+                    </div>
+
+                    <div class="modal-seccion">
+                        <h4 class="modal-subtitulo">Tecnologías y Herramientas</h4>
+                        <ul class="modal-lista">
+                            <li><strong>Frontend:</strong> JavaScript vanilla moderno (ES6+), HTML5 semántico, CSS3
+                                responsivo (Flexbox/Grid).</li>
+                            <li><strong>Backend:</strong> Node.js, Express.js (Arquitectura MVC / Rutas modulares).</li>
+                            <li><strong>Base de Datos:</strong> MongoDB Atlas, Mongoose ODM.</li>
+                            <li><strong>Seguridad y Comunicación:</strong> Autenticación con JWT / sesiones, CORS y
+                                variables de entorno (dotenv).</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="modal-siricellsistema" class="modal-proyecto" role="dialog" aria-modal="true"
+            aria-labelledby="modal-titulo-siricellsistema" aria-hidden="true">
+            <div class="modal-telon" id="telon-modal-siricellsistema"></div>
+            <div class="modal-tarjeta">
+                <button type="button" class="modal-boton-cerrar" id="cerrar-modal-siricellsistema"
+                    aria-label="Cerrar modal">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="18" y1="6" x2="6" y2="18"></line>
+                        <line x1="6" y1="6" x2="18" y2="18"></line>
+                    </svg>
+                </button>
+
+                <header class="modal-encabezado">
+                    <span class="modal-etiqueta">Backoffice & Pasarela de Pagos • 2026</span>
+                    <h3 id="modal-titulo-siricellsistema" class="modal-titulo">Gestión de Stock, Ventas y Pagos en
+                        Tiempo Real</h3>
+                </header>
+
+                <div class="modal-cuerpo">
+                    <div class="modal-seccion">
+                        <h4 class="modal-subtitulo">Descripción</h4>
+                        <p class="modal-texto">
+                            Solución integral de backoffice y checkout automatizado. Conecta directamente la tienda con
+                            la base de datos centralizada en MongoDB Atlas para sincronizar inventario al instante tras
+                            cada transacción (vía Webhooks de pago y transferencias), brindando a los administradores
+                            control total sobre catálogo, métricas de ingresos y estados de envío.
+                        </p>
+                        <div class="aviso-privacidad-proyecto">
+                            <svg class="icono-aviso-privacidad" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <rect width="18" height="11" x="3" y="11" rx="2" ry="2"></rect>
+                                <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                            </svg>
+                            <span>Código privado: no subido a GitHub por tratarse del desarrollo de un proyecto de negocio propio.</span>
+                        </div>
+                    </div>
+
+                    <div class="modal-seccion">
+                        <h4 class="modal-subtitulo">Características Principales</h4>
+                        <ul class="modal-lista">
+                            <li><strong>Pasarela de Pago Integrada:</strong> Procesamiento seguro de cobros mediante el
+                                SDK de Mercado Pago con soporte para tarjetas, transferencias y dinero en cuenta.</li>
+                            <li><strong>Sincronización Inmediata por Webhooks:</strong> Recepción y procesamiento de
+                                notificaciones de pago (IPN / Webhooks) en tiempo real para confirmar transacciones y
+                                actualizar órdenes.</li>
+                            <li><strong>Control Automático de Stock:</strong> Descuento atómico de unidades vendidas y
+                                validación de inventario para evitar sobreventas.</li>
+                            <li><strong>Panel Administrativo Integral:</strong> Visualización de métricas de ingresos,
+                                órdenes en tiempo real y administración completa del catálogo.</li>
+                        </ul>
+                    </div>
+
+                    <div class="modal-seccion">
+                        <h4 class="modal-subtitulo">Tecnologías y Herramientas</h4>
+                        <ul class="modal-lista">
+                            <li><strong>Backend:</strong> Node.js, Express.js (Controladores modulares y endpoints
+                                RESTful).</li>
+                            <li><strong>Base de Datos:</strong> MongoDB Atlas, Mongoose ODM (Modelado relacional
+                                embebido y consultas optimizadas).</li>
+                            <li><strong>Pagos & Automatización:</strong> Mercado Pago SDK, Webhooks asíncronos y
+                                validación de eventos.</li>
+                            <li><strong>Seguridad:</strong> Autenticación protegida para administradores y manejo seguro
+                                de credenciales con dotenv.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="modal-mercadoabasto" class="modal-proyecto" role="dialog" aria-modal="true"
+            aria-labelledby="modal-titulo-mercadoabasto" aria-hidden="true">
+            <div class="modal-telon" id="telon-modal-mercadoabasto"></div>
+            <div class="modal-tarjeta">
+                <button type="button" class="modal-boton-cerrar" id="cerrar-modal-mercadoabasto"
+                    aria-label="Cerrar modal">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="18" y1="6" x2="6" y2="18"></line>
+                        <line x1="6" y1="6" x2="18" y2="18"></line>
+                    </svg>
+                </button>
+
+                <header class="modal-encabezado">
+                    <span class="modal-etiqueta">Backend Application / CLI • 2025</span>
+                    <h3 id="modal-titulo-mercadoabasto" class="modal-titulo">Sistema de Gestión para Mercado de Abasto
+                    </h3>
+                </header>
+
+                <div class="modal-cuerpo">
+                    <div class="modal-seccion">
+                        <h4 class="modal-subtitulo">Descripción</h4>
+                        <p class="modal-texto">
+                            Aplicación backend y de consola desarrollada en Java orientada a modelar y resolver la
+                            lógica de negocio completa de un mercado de abasto (control de stock, administración de
+                            puestos, operaciones comerciales y trazabilidad).
+                        </p>
+                        <p class="modal-texto">
+                            El proyecto fue diseñado priorizando la solidez arquitectónica, separación de
+                            responsabilidades y buenas prácticas de desarrollo por sobre la interfaz gráfica,
+                            enfocándose en la robustez del modelo de dominio y la confiabilidad del código.
+                        </p>
+                    </div>
+
+                    <div class="modal-seccion">
+                        <h4 class="modal-subtitulo">Puntos Fuertes & Aspectos Técnicos</h4>
+                        <ul class="modal-lista">
+                            <li><strong>Enfoque Core Backend / CLI:</strong> Sistema desacoplado de interfaces visuales,
+                                listo para ser expuesto mediante una API REST o integrado con persistencia externa.</li>
+                            <li><strong>Aseguramiento de Calidad (Testing):</strong> Cobertura exhaustiva mediante
+                                pruebas unitarias e integración con JUnit, auditadas y validadas mediante métricas de
+                                cobertura con JaCoCo.</li>
+                            <li><strong>Diseño Orientado a Objetos:</strong> Aplicación de principios SOLID,
+                                encapsulamiento y patrones de diseño para un código escalable y mantenible (+70 clases).
+                            </li>
+                            <li><strong>Desarrollo Colaborativo:</strong> Trabajo en equipo bajo control de versiones
+                                (Git), gestionando resolución de conflictos y asignación modular de tareas.</li>
+                        </ul>
+                    </div>
+
+                    <div class="modal-seccion">
+                        <h4 class="modal-subtitulo">Tecnologías Utilizadas</h4>
+                        <div class="grupo-chips-proyecto">
+                            <span class="chip-tech-proyecto">Java 21</span>
+                            <span class="chip-tech-proyecto">Gradle</span>
+                            <span class="chip-tech-proyecto">JUnit 5</span>
+                            <span class="chip-tech-proyecto">JaCoCo</span>
+                            <span class="chip-tech-proyecto">Git</span>
+                            <span class="chip-tech-proyecto">Guava</span>
+                        </div>
+                    </div>
+
+                    <div class="modal-acciones-pie">
+                        <a href="https://github.com/hsirimarco65-bot/mercado-abasto" target="_blank"
+                            rel="noopener noreferrer" class="boton-visitar-proyecto boton-github-proyecto"
+                            title="Ver repositorio en GitHub">
+                            <svg class="icono-github-proyecto" xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                viewBox="0 0 24 24" fill="currentColor">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" />
+                            </svg>
+                            <span>Ver repositorio en GitHub</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="modal-fashionstyle" class="modal-proyecto" role="dialog" aria-modal="true"
+            aria-labelledby="modal-titulo-fashionstyle" aria-hidden="true">
+            <div class="modal-telon" id="telon-modal-fashionstyle"></div>
+            <div class="modal-tarjeta">
+                <button type="button" class="modal-boton-cerrar" id="cerrar-modal-fashionstyle"
+                    aria-label="Cerrar modal">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="18" y1="6" x2="6" y2="18"></line>
+                        <line x1="6" y1="6" x2="18" y2="18"></line>
+                    </svg>
+                </button>
+
+                <header class="modal-encabezado">
+                    <span class="modal-etiqueta">Landing Page Comercial & Branding • 2025</span>
+                    <h3 id="modal-titulo-fashionstyle" class="modal-titulo">Fashion Style Ruiz – Peluquería & Estética</h3>
+                </header>
+
+                <div class="modal-cuerpo">
+                    <div class="modal-seccion">
+                        <h4 class="modal-subtitulo">Descripción</h4>
+                        <p class="modal-texto">
+                            Sitio web comercial desarrollado a medida para el salón de peluquería y estética "Fashion Style Ruiz".
+                            El objetivo principal fue crear una vitrina digital atractiva, moderna y ágil que posicione la
+                            marca en internet, exhiba los servicios disponibles y simplifique la comunicación con los clientes
+                            para reserva de citas y consultas.
+                        </p>
+                    </div>
+
+                    <div class="modal-seccion">
+                        <h4 class="modal-subtitulo">Características Principales</h4>
+                        <ul class="modal-lista">
+                            <li><strong>Diseño Responsive & Mobile-First:</strong> Experiencia de usuario optimizada en
+                                teléfonos móviles, tablets y pantallas de escritorio.</li>
+                            <li><strong>Navegación Interactiva:</strong> Menú adaptable con botón hamburguesa desarrollado
+                                en JavaScript vanilla, asegurando fluidez y nula sobrecarga de dependencias.</li>
+                            <li><strong>Catálogo de Servicios y Trabajos:</strong> Exposición clara de especialidades
+                                (coloración, balayage, peinados, estética), productos y galería de imágenes.</li>
+                            <li><strong>Conversión Directa:</strong> Botones de llamada a la acción enlazados directamente
+                                a WhatsApp e Instagram para agendar turnos de forma inmediata.</li>
+                            <li><strong>Arquitectura Ligera:</strong> Código limpio en HTML5 semántico, CSS3 moderno y
+                                JavaScript nativo sin dependencias externas innecesarias, con tiempos de carga óptimos.</li>
+                        </ul>
+                    </div>
+
+                    <div class="modal-seccion">
+                        <h4 class="modal-subtitulo">Tecnologías Utilizadas</h4>
+                        <div class="grupo-chips-proyecto">
+                            <span class="chip-tech-proyecto">HTML5 Semántico</span>
+                            <span class="chip-tech-proyecto">CSS3 Moderno</span>
+                            <span class="chip-tech-proyecto">JavaScript (Vanilla ES6+)</span>
+                            <span class="chip-tech-proyecto">Diseño Responsive</span>
+                        </div>
+                    </div>
+
+                    <div class="modal-acciones-pie">
+                        <a href="https://peluqueriastyleruiz.sirionstudio.com" target="_blank"
+                            rel="noopener noreferrer" class="boton-visitar-proyecto" title="Abrir sitio web oficial">
+                            <span>Visitar sitio web oficial</span>
+                            <svg class="icono-enlace-externo" xmlns="http://www.w3.org/2000/svg" width="17" height="17"
+                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                <polyline points="15 3 21 3 21 9"></polyline>
+                                <line x1="10" y1="14" x2="21" y2="3"></line>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="modal-visor-imagen" class="modal-visor" role="dialog" aria-modal="true"
+            aria-labelledby="visor-titulo-imagen" aria-hidden="true">
+            <div class="modal-telon" id="telon-visor-imagen"></div>
+            <div class="modal-visor-dialogo">
+                <button type="button" class="modal-boton-cerrar visor-boton-cerrar" id="cerrar-visor-imagen"
+                    aria-label="Cerrar visor de imagen">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="18" y1="6" x2="6" y2="18"></line>
+                        <line x1="6" y1="6" x2="18" y2="18"></line>
+                    </svg>
+                </button>
+
+                <div class="visor-encabezado">
+                    <div class="visor-textos">
+                        <span class="visor-badge-categoria" id="visor-badge-tipo">Captura de Proyecto</span>
+                        <h3 id="visor-titulo-imagen" class="visor-titulo">Título de la imagen</h3>
+                        <p id="visor-subtitulo-imagen" class="visor-subtitulo">Detalles técnicos de la captura</p>
+                    </div>
+                    <a id="visor-enlace-externo" href="#" target="_blank" rel="noopener noreferrer"
+                        class="visor-boton-externo" title="Abrir imagen en pestaña nueva en máxima resolución">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                            <polyline points="15 3 21 3 21 9"></polyline>
+                            <line x1="10" y1="14" x2="21" y2="3"></line>
+                        </svg>
+                        <span>Abrir tamaño completo</span>
+                    </a>
+                </div>
+
+                <div class="visor-contenedor-imagen" id="visor-contenedor-imagen">
+                    <img id="visor-imagen-activa" src="" alt="" class="visor-imagen">
+                </div>
+
+                <div class="visor-barra-inferior">
+                    <button type="button" class="visor-boton-nav" id="visor-boton-anterior"
+                        aria-label="Ver imagen anterior">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="15 18 9 12 15 6"></polyline>
+                        </svg>
+                        <span>Anterior</span>
+                    </button>
+                    <span class="visor-indicador-contador" id="visor-contador">1 / 2</span>
+                    <button type="button" class="visor-boton-nav" id="visor-boton-siguiente"
+                        aria-label="Ver imagen siguiente">
+                        <span>Siguiente</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="9 18 15 12 9 6"></polyline>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <script src="main.js?v=5"></script>
+</body>
+
+</html>
